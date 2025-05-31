@@ -8,6 +8,11 @@ A simple movie browser app built using the TMDB API. Developed as part of the fr
 - Tailwindcss
 - TMDB API
 
+## 🌐 Live Demo
+
+You can try the app here:  
+👉 [https://seryu-movie-app.netlify.app]
+
 ## 🚀 Features
 
 - View popular, top-rated, or upcoming movies
