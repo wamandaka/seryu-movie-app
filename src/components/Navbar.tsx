@@ -7,9 +7,6 @@ import { HiXMark } from "react-icons/hi2";
 import { useNavigate } from "react-router-dom";
 import ModalLogin from "./ModalLogin";
 
-
-
-
 const Navbar = () => {
   const [isLogin, setIsLogin] = useState(true);
   const [openNav, setOpenNav] = useState(false);
@@ -64,20 +61,20 @@ const Navbar = () => {
           {openNav ? (
             <ul className="md:flex items-center space-x-8 absolute top-16 right-0 bg-primary p-4 md:p-0 md:static w-full md:w-auto z-50">
               <li>
-                <a
-                  href="/favorites"
-                  className="font-roboto text-xl font-normal"
+                <button
+                  onClick={(e) => handleNavigate(e, "favorites")}
+                  className="font-roboto text-xl font-normal cursor-pointer"
                 >
                   Favorite
-                </a>
+                </button>
               </li>
               <li>
-                <a
-                  href="/watchlist"
-                  className="font-roboto text-xl font-normal"
+                <button
+                  onClick={(e) => handleNavigate(e, "watchlist")}
+                  className="font-roboto text-xl font-normal cursor-pointer"
                 >
                   Watchlist
-                </a>
+                </button>
               </li>
               {isLogin ? (
                 <li>
